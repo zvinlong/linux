@@ -1,0 +1,20 @@
+#!/bin/bash
+src=$1
+dest=$2
+compareTo=$3
+if [ -e $dest ]
+then
+	echo "$dest file is not exit"
+else
+	echo "mkdir $dest dir"
+	mkdir $dest
+fi
+for f in $src
+do
+    if [[ "$compareTo" > "$f" ]];then
+	echo "mv $f $dest"
+	mv $f $dest
+    else
+        echo "filter $f"
+    fi
+done
