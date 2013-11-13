@@ -4,7 +4,7 @@ dest=$2
 compareTo=$3
 if [ -e $dest ]
 then
-	echo "$dest file is not exit"
+	echo "$dest file is exited"
 else
 	echo "mkdir $dest dir"
 	mkdir $dest
