@@ -14,7 +14,7 @@ do
     if [[ "$compareTo" > "$f" ]];then
 #	echo "mv $f $dest"
 	mv $f $dest
-    else
+#    else
 #       echo "filter $f"
     fi
 done
