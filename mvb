@@ -18,3 +18,5 @@ do
 #       echo "filter $f"
     fi
 done
+
+echo "ok"
