@@ -12,9 +12,9 @@ fi
 for f in $src
 do
     if [[ "$compareTo" > "$f" ]];then
-	echo "mv $f $dest"
+#	echo "mv $f $dest"
 	mv $f $dest
     else
-        echo "filter $f"
+#       echo "filter $f"
     fi
 done
